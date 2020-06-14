@@ -1,0 +1,30 @@
+.\"  -*- nroff -*-
+.\"
+.\" tolocal.1
+.\"
+.\"
+.TH TOLOCAL 1 2020-06-14 0.1 "Character set conversion filter"
+.\"
+.\" NAME chapter
+.SH NAME
+tolocal \- Character set conversion filter
+.\"
+.\" SYNOPSIS chapter
+.SH SYNOPSIS
+.B tolocal
+.I option
+.\"
+.\" DESCRIPTION chapter
+.SH DESCRIPTION
+.B tolocal
+is a real time character set conversion filter, it converts from the specified
+character set, or IBM437 if none is specied, to the local character set which
+is determined by read the environment variable $LANG.
+.\"
+.\" OPTIONS chapter
+.SH OPTIONS
+It has one option, the character to convert from, which defaults to IBM437 if
+no arguents are given. A list of supported character sets can be obtained by
+running: iconv -l
+.SH SEE ALSO
+iconv(1)
